@@ -1,0 +1,185 @@
+/*********************************************** TAG SELECTOR ******************************************/
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+    --white:hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:var(--violet);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 145px 0 10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: 0.8;
+    padding: 20px 30px 30px 10px;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+  margin: 4px;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 60%; 
+  text-align: center;
+  cursor: pointer;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+ul li:hover {
+    border: 1px solid var(--softMagenta);
+    color: var(--softMagenta);
+}
+
+
+/*********************************************** CLASS SELECTOR ******************************************/
+
+.bar {
+    padding: 45px 0 70px 35px;
+}
+
+.container {
+    display: flex;
+    padding: 0 0 10px 45px;
+}
+
+.huddle {
+    color: var(--white);  
+    padding: 60px 50px 40px 30px ;
+    line-height: 1.6;
+    width: 36.9%;
+}
+
+
+.reg a {
+    background-color: var(--white);
+    color: var(--violet);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 20px 0 0 10px;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    box-shadow: 1px 1px 5px #000;
+    cursor: pointer;
+}
+
+.reg a:hover {
+    color: var(--white);
+    background-color: var(--softMagenta);
+    border: none;
+    outline: none;
+}
+
+
+.socials {
+    position: absolute;
+    right: 300px;
+    bottom: 80px;
+}
+
+
+ .fa-facebook-f, .fa-instagram, .fa-twitter{
+    width: 1.3em;
+ } 
+ 
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+   }
+
+.attribution a { 
+   color: var(--softMagenta);
+}
+
+footer {
+   color: var(--white);
+}
+
+
+   /* media queries start */
+
+ @media only screen and (max-width: 600px) {
+    body {
+        background-color:var(--violet);
+        background-image: url(../images/bg-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .bar img {
+        width: 35%;
+    }
+
+    .bar {
+        padding: 35px 0 45px 45px;
+    }
+
+    .mockup img {
+        width: 89vw;
+        padding: 7px 30px 0 0;
+    } 
+    
+    .huddle {
+        text-align: center;
+        width: 90%; 
+    }
+
+    h1 {
+        margin: 0 0 15px 0;
+        padding:0;
+    }
+
+    p {
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    .reg a {
+        padding: 10px 70px;
+    }
+
+
+    .socials {
+      position: relative;
+      top: 3px;
+      left: 135px;
+    }
+
+    .attribution {
+        margin-top: 30px;
+    }
+ }
+
+   /* media queries end */
+
+
+
